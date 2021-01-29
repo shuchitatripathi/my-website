@@ -1,0 +1,56 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AmazonS31",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "cf-templates-1k4kpq7an359h-ap-southeast-2",
+				"fileName": "2019246Qfk-test.json"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"AWSTemplateFormatVersion": {
+					"type": "string"
+				},
+				"Description": {
+					"type": "string"
+				},
+				"Resources": {
+					"type": "object",
+					"properties": {
+						"EC2Instance": {
+							"type": "object",
+							"properties": {
+								"Type": {
+									"type": "string"
+								},
+								"Properties": {
+									"type": "object",
+									"properties": {
+										"ImageId": {
+											"type": "string"
+										},
+										"InstanceType": {
+											"type": "string"
+										},
+										"SubnetId": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
