@@ -1,0 +1,17 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/dfstoragecontainer/blobs/",
+			"ignoreEmptyBlobs": false,
+			"scope": "/subscriptions/f8c319cf-7b8a-41e2-9130-968473f874aa/resourceGroups/datafactory/providers/Microsoft.Storage/storageAccounts/dfststorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
